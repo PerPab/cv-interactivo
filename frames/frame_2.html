@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="html-frame">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/estilos.css" type="text/css" rel="stylesheet">
+    <script src="../assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="../assets/js/funcion.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+
+<body id="frame1">
+
+    <div class="cuadro-diario">
+
+
+        <div id="cuadro-trabajo"></div>
+    </div>
+
+
+    <div class="cuadro-diario-botones">
+        <button onClick="estudio()" id="btn-frame-diario-1" type="button">ESTUDIOS</button>
+
+        <button onClick="trabajo()" id="btn-frame-diario-3" type="button">EXPERIENCIA</button>
+    </div>
+
+    <ul id="lista-estudio">
+        <li>
+            <b>ISTEA Instituto Tecnológico Empresarial Argentino </b>- 2023 - 2025 <b>(En curso)</b><br>
+            Tecnico Superior en Desarrollo de software
+        </li><br>
+
+        <li>
+            <b>Coderhouse</b> - 2022 - 2023 <b>(En curso)</b><br>
+            Curso de JavaScript
+        </li><br>
+
+        <li>
+            <b>Teclab Instituto Técnico Superior</b> - 2022 - 2022<br>
+            Auxiliar en programación
+        </li><br>
+
+        <li><b>Alura</b> - 2022 - 2022<br>
+            Programa ONE (Oracle Next Education)
+        </li><br>
+
+        <li><b>Universidad Tecnológica Nacional</b> - 2022 - 2022<br>
+            Diplomatura en Python
+        </li><br>
+
+        <li>
+            <b>Universidad Tecnológica Nacional</b> - 2015 - 2017<br>
+            Tecnicatura Superior en Higiene y Seguridad en el Trabajo
+        </li><br>
+
+        <li>
+            <b>Informatic Training Center</b> -2010 -2011<br>
+            Curso de Diseño Gráfico Publicitario
+        </li><br>
+
+        <li>
+            <b>Escuela de Educación Técnica Nº1 Pablo Stampa</b> - 2000 - 2005<br>
+            Tecnico Mecanico Nacional
+        </li><br>
+
+
+    </ul>
+
+    <ul id="lista-trabajo" class="clase-oculta">
+        <li>
+            <b>Archroma </b>- 2013 - 2023 <br>
+            -Trabajos en Logistica<br>
+            -Elaboración, envasado y etiquetado de productos<br>
+            -Realización de análisis de laboratorio<br>
+            -Manejo de autelevador, reactor y caldera
+
+        </li><br>
+
+        <li>
+            <b>Clariant</b> - 2012 - 2013 <br>
+            -Manejo de autelevador, reactor y caldera<br>
+            -Elaboración y envasado y etiquetado de productos<br>
+            -Realización de análisis de laboratorio<br>
+        </li><br>
+
+        <li>
+            <b>Fábrica de colchones El Litoral S.A.</b> - 2011 - 2012<br>
+            -Operario de máquina enderezadora-cortadora de varillas<br>
+            -Operario de soldadora de punto<br>
+            -Operario de dobladora neumática<br>
+        </li><br>
+
+        <li><b>Informatic Training Center</b> - 2010 - 2011<br>
+            -Configuración y mantención de equipos<br>
+            -Instalación, configuración y soporte de sistemas operativos Windows<br>
+            -Recuperación de datos eliminados o destruidos<br>
+        </li><br>
+
+    </ul>
+
+    <script>
+
+
+
+        function estudio() {
+            $("#lista-trabajo").addClass("clase-oculta");
+            $("#lista-estudio").removeClass("clase-oculta");
+        }
+        function trabajo() {
+            $("#lista-estudio").addClass("clase-oculta");
+            $("#lista-trabajo").removeClass("clase-oculta");
+        }
+    </script>
+</body>
+
+</html>

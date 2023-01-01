@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="html-frame">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/estilos.css" type="text/css" rel="stylesheet">
+    <script src="./assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="./assets/js/funcion.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+
+<body id="frame1">
+
+
+
+    <div>
+        <label id="label-inventario">
+            <p class="etiqueta-texto">ITEMS</p>
+        </label>
+    </div>
+
+
+
+    <div id="contenedor-pantalla-inventario">
+        <div id="descripcion-inventario"></div>
+
+
+
+    </div>
+    </div>
+
+    <div id="marco-inventario"></div>
+    <div id="div-inventario">
+        <table id="inventario">
+            <tr>
+                <td class="btn-inv"><button type="button" id="btn-python" acronym title="Python" onClick="python()">
+                    </button></td>
+                <td class="bg-black"></td>
+                <td class="btn-inv"><button type="button" id="btn-html" acronym title="HTML5"> </button></td>
+                <td class="bg-black"></td>
+            </tr>
+            <tr>
+                <td class="bg-black"></td>
+                <td class="btn-inv"><button type="button" id="btn-js" acronym title="JavaScript"> </button></td>
+                </td>
+                <td class="bg-black"></td>
+                <td class="bg-black"></td>
+            </tr>
+            <tr>
+                <td class="btn-inv"><button type="button" id="btn-ps" acronym title="Photoshop"> </button></td>
+                </td>
+                <td class="bg-black"></td>
+                <td class="bg-black"></td>
+                <td class="btn-inv"><button type="button" id="btn-java" acronym title="Java"> </button></td>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-black"></td>
+                <td class="btn-inv"><button type="button" id="btn-css" acronym title="CSS3"> </button></td>
+                </td>
+                <td class="bg-black"></td>
+                <td class="bg-black"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script>
+
+
+        var boton = document.getElementById("btn-python");
+        boton.addEventListener("click", setImagePython);
+
+        function setImagePython(fondo) {
+            var fondo = document.getElementById("descripcion-inventario");
+            fondo.style.backgroundImage = "url('../assets/img/bg-python-web.jpg')";
+        }
+
+        var botonjs = document.getElementById("btn-js");
+        botonjs.addEventListener("click", setImageJs);
+
+        function setImageJs(fondo) {
+            var fondo = document.getElementById("descripcion-inventario");
+            fondo.style.backgroundImage = "url('../assets/img/bg-js-web.jpg')";
+        }
+
+        var botonjava = document.getElementById("btn-java");
+        botonjava.addEventListener("click", setImageJava);
+
+        function setImageJava(fondo) {
+            var fondo = document.getElementById("descripcion-inventario");
+            fondo.style.backgroundImage = "url('../assets/img/bg-jav-web.jpg')";
+        }
+
+        var botonhtml = document.getElementById("btn-html");
+        botonhtml.addEventListener("click", setImageHtml);
+
+        function setImageHtml(fondo) {
+            var fondo = document.getElementById("descripcion-inventario");
+            fondo.style.backgroundImage = "url('../assets/img/bg-ht-web.jpg')";
+        }
+
+        var botonCss = document.getElementById("btn-css");
+        botonCss.addEventListener("click", setImageCss);
+
+        function setImageCss(fondo) {
+            var fondo = document.getElementById("descripcion-inventario");
+            fondo.style.backgroundImage = "url('../assets/img/bg-css-web.jpg')";
+        }
+
+        var botonPs = document.getElementById("btn-ps");
+        botonPs.addEventListener("click", setImagePs);
+
+        function setImagePs(fondo) {
+            var fondo = document.getElementById("descripcion-inventario");
+            fondo.style.backgroundImage = "url('../assets/img/bg-ps-web.jpg')";
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
